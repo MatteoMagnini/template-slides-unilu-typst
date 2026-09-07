@@ -45,21 +45,21 @@
     show-bibliography-as-footnote: bibliography(title: none, "bibliography.bib"),
   ),
   config-info(
-    title: [Presentation Title],
+    title: [Presentation title],
     subtitle: [Subtitle],
     author: author_list(
       (
-        (first_author("Nicolas Farabegoli"), "nicolas.farabegoli@unibo.it"),
+        (first_author("Matteo Magnini"), "matteo.magnini@uni.lu"),
         ("Foo Bar", "foo@bar.com"),
       ),
-      logo: "images/disi.svg",
-      width: 35%,
+      logo: "images/logo_unilu_fr.svg",
+      width: 20%,
     ),
     date: datetime.today().display("[day] [month repr:long] [year]"),
-    institution: [University of Bologna],
+    institution: [University of Luxembourg],
     logo: context {
      if utils.slide-counter.get().first() > 1 [
-        #align(right)[#image("images/disi.svg", height: 1cm)]
+        #align(right)[#image("images/logo_unilu_short.svg", height: 1cm)]
       ] else [
         #none
       ]
